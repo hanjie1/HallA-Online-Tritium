@@ -1,0 +1,11 @@
+#!/bin/bash
+#script to run Scaler_check automatically
+
+for((runnumber=927;runnumber<977;runnumber++))
+do
+   root -l 'Scalercheck.C('$runnumber')'
+done
+
+
+
+
