@@ -12,6 +12,11 @@ block FbusR.cer.*
 
 block DR.*
 block OldTrackR.*
+block F1*
+variable vfnhits
+variable vfFirstHit
+variable vfAllHits_126
+
 
 # Physics variables
 block R.gold.*

@@ -100,6 +100,8 @@ void replay_tritium(Int_t runnumber=0,Int_t numevents=0,Int_t fstEvt=0,Bool_t Qu
       Tritium_THaScaler100EvtHandler* rEndscaler = new Tritium_THaScaler100EvtHandler("EndRight","HA scaler event type 100");
       gHaEvtHandlers->Add(rEndscaler);
 
+      gHaEvtHandlers->Add (new TdcDataEvtHandler("RTDC","F1 and VETROC TDCs rHRS"));
+
     }
 
     //==================================
@@ -230,6 +232,9 @@ void replay_tritium(Int_t runnumber=0,Int_t numevents=0,Int_t fstEvt=0,Bool_t Qu
 
     Tritium_THaScaler100EvtHandler* lEndscaler = new Tritium_THaScaler100EvtHandler("EndLeft","HA scaler event type 100");
     gHaEvtHandlers->Add(lEndscaler);
+
+    gHaEvtHandlers->Add (new TdcDataEvtHandler("LTDC","F1 TDCs lHRS"));
+
 
     }
 

@@ -14,6 +14,7 @@ block FbusL.cer.*
 
 block DL.*
 block OldTrackL.*
+block F1*
 
 # Physics variables
 block L.gold.*
